@@ -1,0 +1,15 @@
+# Turtle visualizer
+turtle_control:
+  ros__parameters:
+    # Turtle frame name
+    frame_id: "/turtle_cmd"
+    # Topic name to get the current turtle pose
+    subs_topic_name: "/turtle_cmd"
+    # Topic name to publish marker
+    pub_topic_name: "/turtle_pose"
+    # control gains
+    gains: [0.03, 0.03, 0.03]
+    # control period in ms
+    ctrl_period: 1
+    # Initial turtle pose
+    turtle_init: [0.0, 0.0, 0.0]

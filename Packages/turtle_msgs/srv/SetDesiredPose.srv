@@ -1,0 +1,7 @@
+# Desired pose
+geometry_msgs/Pose2D turtle_d
+
+# Desired time to reach the desired pose
+float32 time
+---
+bool confirmation

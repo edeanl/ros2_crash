@@ -17,7 +17,7 @@
 		colcon build
 	3) Run the binary teleop_twist_keyboard.py and play with it! 
 		ros2 run teleop_twist_keyboard teleop_twist_keyboard
-**Q1**: How can we test our programm? Hint: ros topics!
+**Q1**: How can we test our program? Hint: ros topics!
 
 	4) Add a customized print message in the file teleop_twist_keyboard.py and run it again
 

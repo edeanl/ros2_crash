@@ -1,0 +1,11 @@
+# Turtle visualizer
+turtle_visualizer:
+  ros__parameters:
+    # Turtle frame name
+    frame_id: "/turtle_frame"
+    # Topic name to get the current turtle pose
+    subs_topic_name: "/turtle_pose"
+    # Topic name to publish marker
+    marker_topic_name: "/turtle_marker"
+    # Marker namespace
+    marker_namespace: "turtle_marker"

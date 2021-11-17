@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/src",
+                    "${workspaceFolder}/install/turtlesim/include",
+                    "${workspaceFolder}/install/include/cpp_msgs/**",
+                    "${workspaceFolder}/install/include/turtle_msgs/**"
+                ],
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/usr/include/**",
+                "/opt/ros/foxy/include/**",
+                "${workspaceFolder}/src/**",
+                // "${workspaceFolder}/install/include/**"
+                // "${workspaceFolder}/install/include/turtlesim/**",
+                "${workspaceFolder}/install/include/cpp_msgs/**",
+                "${workspaceFolder}/install/include/turtle_msgs/**"
+                // "${workspaceFolder}/install/include/atr_interfaces/msg/**"
+                //it is better to add the packages that generate msg, srv, and actions directly, and not the entire install/include to avoid the problem that vscode opens the h files from include/package_name, and not from src/package_name/include
+            ],
+            "name": "ROS",
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "compilerArgs": [
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
