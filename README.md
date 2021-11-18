@@ -116,7 +116,7 @@
 	The output of both nodes is a TurtleStateStamped message, which is connected to the controller to change the 
 	pose of the turtle
 	1) Create a new ros python package "turtle_trajectory_generator"
-		ros2 pkg create --build-type ament_cmake turtle_trajectory_generator
+		ros2 pkg create --build-type ament_python turtle_trajectory_generator
 	2) Fix the ros package configuration files to use the new package, e.g. package.xml, resource, setup.py, etc.
 	3) Copy the file teleop_twist_keyboard.py from the ros package teleop_twist_keyboard to this new package
 	4) Compile the workspace. This is needed to create the symbolic links to the python files. 
