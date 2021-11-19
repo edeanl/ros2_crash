@@ -136,10 +136,12 @@
 ## Running Demo
 
 ### Turtle Ctrl + Vis
+
 T1)
 	cd /home/dean/ros2/workspaces/ros2_crash_ws/
 	source install/setup.bash
 	ros2 launch turtle_ctrl turtle_test_launch.py
+	
 T2) 
 	ros2 topic pub --rate 1 /turtle_pose turtle_msgs/msg/TurtleStateStamped "{pose: {x: 0, y: 1, theta: 0}}"
 
